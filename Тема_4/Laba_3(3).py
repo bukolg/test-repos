@@ -5,7 +5,7 @@ def count_letters(text):
     print(f"Текст в нижнем регистре: {lowercase}")
 
     for symbol in lowercase:
-        if symbol.isalpha() and symbol.islower():  # Проверка символов на букву в нижнем регистре
+        if symbol.isalpha():  # Проверка символов на букву в нижнем регистре
             if symbol in dictionary:
                 dictionary[symbol] += 1
             else:
